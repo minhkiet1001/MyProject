@@ -1,0 +1,190 @@
+/* Reset mặc định và font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 100px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* Container cho form */
+.promotions-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Hiệu ứng fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a3c34;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Label */
+label {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 10px 0 5px;
+}
+
+/* Input và Select */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2c3e50;
+    background: #f5f7fa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+    outline: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    background: #f5f7fa url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%232c3e50" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') no-repeat right 12px center;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* Nút submit */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #1abc9c, #16a085);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #16a085, #1abc9c);
+    transform: scale(1.05);
+}
+
+/* Thông báo */
+.message {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.message.error {
+    background: #ffebee;
+    color: #e74c3c;
+}
+
+.message.success {
+    background: #e8f5e9;
+    color: #27ae60;
+}
+
+/* Link quay lại */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-link:hover {
+    color: #16a085;
+    transform: translateX(-5px);
+}
+
+.back-link i {
+    margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 60px 15px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .promotions-container {
+        padding: 20px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+        padding: 10px;
+        font-size: 14px;
+    }
+    button[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

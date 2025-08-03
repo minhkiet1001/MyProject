@@ -1,0 +1,26 @@
+# Java build
+*.class
+*.jar
+*.war
+*.log
+
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# VSCode (nếu dùng)
+.vscode/
+.node_modules/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*

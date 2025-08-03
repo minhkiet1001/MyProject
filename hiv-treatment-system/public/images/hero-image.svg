@@ -1,0 +1,37 @@
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .clinic { fill: #f3f4f6; stroke: #d1d5db; stroke-width: 2; }
+    .roof { fill: #4ade80; }
+    .window { fill: #bfdbfe; stroke: #3b82f6; stroke-width: 1; }
+    .door { fill: #fca5a5; stroke: #ef4444; stroke-width: 1; }
+    .person { fill: #a78bfa; }
+    .text { font-family: Arial, sans-serif; fill: #1f2937; }
+    .heart { fill: #fb7185; }
+  </style>
+
+  <!-- Background -->
+  <rect width="500" height="400" fill="#f0fdf4" rx="10" ry="10" />
+
+  <!-- Building -->
+  <rect x="150" y="150" width="200" height="150" class="clinic" rx="5" ry="5" />
+  <polygon points="150,150 250,80 350,150" class="roof" />
+  
+  <!-- Windows -->
+  <rect x="180" y="180" width="40" height="40" class="window" rx="5" ry="5" />
+  <rect x="280" y="180" width="40" height="40" class="window" rx="5" ry="5" />
+  
+  <!-- Door -->
+  <rect x="230" y="240" width="40" height="60" class="door" rx="5" ry="5" />
+  
+  <!-- People -->
+  <circle cx="100" cy="260" r="20" class="person" />
+  <circle cx="400" cy="260" r="20" class="person" />
+  
+  <!-- Text -->
+  <text x="250" y="50" text-anchor="middle" class="text" font-size="24" font-weight="bold">HIV Care Center</text>
+  <text x="250" y="340" text-anchor="middle" class="text" font-size="16">Compassionate Care for All</text>
+  
+  <!-- Hearts -->
+  <path d="M120,220 C120,213 115,208 108,208 C101,208 96,213 96,220 C96,235 120,245 120,245 C120,245 144,235 144,220 C144,213 139,208 132,208 C125,208 120,213 120,220 Z" class="heart" />
+  <path d="M390,220 C390,213 385,208 378,208 C371,208 366,213 366,220 C366,235 390,245 390,245 C390,245 414,235 414,220 C414,213 409,208 402,208 C395,208 390,213 390,220 Z" class="heart" />
+</svg> 
